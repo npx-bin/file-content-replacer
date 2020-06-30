@@ -1,6 +1,6 @@
 {
   "name": "file-content-replacer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A file content replacer utility. Replaces contents within files, recursively within a directory.",
   "main": "lib/index.js",
   "keywords": [

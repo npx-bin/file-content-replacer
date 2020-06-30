@@ -2,6 +2,8 @@
 
 ### A file content replacer utility. Replaces contents within files, recursively within a directory.
 
+<br/>
+
 **Installation:**
 
 ```
