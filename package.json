@@ -1,0 +1,20 @@
+{
+  "name": "file-content-replacer",
+  "version": "1.0.0",
+  "description": "A file content replacer utility. Replaces contents within files, recursively within a directory.",
+  "main": "lib/index.js",
+  "keywords": [
+    "replace",
+    "recursive",
+    "directory",
+    "folder",
+    "files",
+    "file",
+    "content"
+  ],
+  "dependencies": {
+    "recursive-readdir": "^2.2.2"
+  },
+  "author": "K.C.Ashish Kumar",
+  "license": "MIT"
+}
