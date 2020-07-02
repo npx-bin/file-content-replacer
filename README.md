@@ -21,7 +21,8 @@ async function myFunc() {
     var result = await fcr(directoryPath, fileMatcher, replace, replaceWith, options).catch((err) => {
         console.log(err);
     });
-    result && console.log(result);
+    result && console.log(result.message);
+    result && console.log(result.data);
 }
 myFunc();
 
@@ -33,7 +34,7 @@ myFunc();
 * @param {*} replaceWith [type: string|function] - The replacement which will replace the substring
 * @param {?} options [type: Object] - Configuration object. This argument is OPTIONAL.
 *
-* return: Promise
+* return: Promise - The resolved object contains properties 'message' & 'data'.
 */
 ```
 
@@ -54,10 +55,12 @@ async function myFunc() {
     }).catch((err) => {
         console.log(err);
     });
-    result && console.log(result);
+    result && console.log(result.message);
+    result && console.log(result.data);
 }
 myFunc();
 ```
+
 - You can provide a `directoryPath` (i.e. first argument)
 - You can control the files to be matched via a `fileMatcher` (i.e. second argument) predicate _**function**_.  
 Note: If you want to lookup file(s) only at a specific directory, then use the `filepath` argument and return true with the appropriate comparison.  
@@ -80,12 +83,13 @@ async function myFunc() {
     var result = await fcr(".", function (filepath) { return filepath.endsWith(".css"); }, "/assets/", "assets/").catch((err) => {
         console.log(err);
     });
-    result && console.log(result);
+    result && console.log(result.message);
+    result && console.log(result.data);
 }
 myFunc();
 ```
  - In the above simple example, we will replace the substring "/assets/" with "assets/" in all the ".css" files in the current directory(recursive).  
- **Note**: Since we provided the third argument as a `string` and not a `RegExp`, it would only replace the first match in each file.  
+ **Note**: Since we provided the third argument as a `string` and not a `RegExp`, it would only replace the first matching occurence in each file.  
  The purpose of this example is just to demonstrate the flexibility offered by the library.
 
 ---
