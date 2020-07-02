@@ -62,7 +62,7 @@ myFunc();
 - You can control the files to be matched via a `fileMatcher` (i.e. second argument) predicate _**function**_.  
 Note: If you want to lookup file(s) only at a specific directory, then use the `filepath` argument and return true with the appropriate comparison.  
 The predicate function gives you the flexibility to determine which exact file(s) should be matched.
-- Provide a _**string or RegExp**_ as the `replace` (i.e. third argument) as in this case i.e. /\\/ASSETS\\//gi --> match global, case-insensitive occurences of the term /ASSETS/
+- Provide a _**string or RegExp**_ as the `replace` (i.e. third argument) as in this case i.e. `/\/ASSETS\//gi` --> match global, case-insensitive occurences of the substring "/ASSETS/"
 - Provide a _**string or function**_ as the `replaceWith` (i.e. fourth argument)
 - Additionally you can also provide a fifth argument `options` of type _**Object**_.  
 The valid properties in the options object are:  
