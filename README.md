@@ -74,7 +74,7 @@ The default value for `timeoutMillis` is 20000 i.e. 20 seconds and will be used 
 ---
 
 ## A simple example:  
-The below example describes a scenario wherein we want to update all the ".css" files in the current directory(recursive) and replace the text "/ASSETS/" with "assets/".
+The below example describes a scenario wherein we want to update all the ".css" files in the current directory(recursive) and replace the text "/assets/" with "assets/".
 ```
 async function myFunc() {
     var result = await fcr(".", function (filepath) { return filepath.endsWith(".css"); }, "/assets/", "assets/").catch((err) => {
@@ -85,7 +85,7 @@ async function myFunc() {
 myFunc();
 ```
  - In the above simple example, we will replace the substring "/assets/" with "assets/" in all the ".css" files in the current directory(recursive).  
- Note: Since we provided the third argument as a `string` and not a `RegExp`, it would only replace the first match in each file.  
+ **Note**: Since we provided the third argument as a `string` and not a `RegExp`, it would only replace the first match in each file.  
  The purpose of this example is just to demonstrate the flexibility offered by the library.
 
 ---
