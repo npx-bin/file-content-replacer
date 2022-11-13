@@ -13,7 +13,7 @@
     "content"
   ],
   "dependencies": {
-    "recursive-readdir": "^2.2.2"
+    "recursive-readdir": "^2.2.3"
   },
   "repository": {
     "type": "git",
