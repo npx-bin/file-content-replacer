@@ -1,0 +1,21 @@
+{
+  "name": "file-content-replacer",
+  "version": "3.0.6",
+  "description": "A file content replacer utility. Replaces contents within files, recursively within a directory.",
+  "main": "lib/index.js",
+  "keywords": [
+    "replace",
+    "recursive",
+    "directory",
+    "folder",
+    "files",
+    "file",
+    "content"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npx-bin/file-content-replacer.git"
+  },
+  "author": "K.C.Ashish Kumar",
+  "license": "MIT"
+}
